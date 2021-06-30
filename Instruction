@@ -1,0 +1,11 @@
+
+''Create .py from .ipynb''
+try:   
+    !jupyter nbconvert --to python test_exe.ipynb
+    # python即转化为.py，script即转化为.html
+    # file_name.ipynb即当前module的文件名
+except:
+    pass
+    
+
+'' Drag the py to pyinstaller folder, then go to Prompt, input: pyinstaller -F filename.py ""
